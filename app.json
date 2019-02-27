@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/popular/popular",
+    "pages/book/book",
+    "pages/book-detail/book-detail",
+    "pages/my/my",
+    "pages/course/course",
+    "pages/about/about"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#f00",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black",
+    "backgroundColor":"#0000ff",
+    "enablePullDownRefresh":true
+  }
+}
