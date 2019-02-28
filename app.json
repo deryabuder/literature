@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/popular/popular",
     "pages/book/book",
     "pages/book-detail/book-detail",
@@ -7,11 +7,34 @@
     "pages/course/course",
     "pages/about/about"
   ],
-  "window":{
-    "navigationBarBackgroundColor": "#f00",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black",
-    "backgroundColor":"#0000ff",
-    "enablePullDownRefresh":true
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "旧岛小样",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#fff",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "backgroundColor":"#fff",
+    "list": [
+      {
+        "pagePath": "pages/popular/popular",
+        "text": "流行",
+        "iconPath": "images/tab/popular.png",
+        "selectedIconPath": "images/tab/popular@highlight.png"
+      },
+      {
+        "pagePath": "pages/book/book",
+        "text": "书单",
+        "iconPath": "images/tab/book.png",
+        "selectedIconPath": "images/tab/book@highlight.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/tab/my.png",
+        "selectedIconPath": "images/tab/my@highlight.png"
+      }
+    ]
   }
 }

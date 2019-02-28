@@ -1,2 +1,42 @@
 <!--pages/book-detail/book-detail.wxml-->
-<text>pages/book-detail/book-detail.wxml</text>
+<view>
+  <view>
+    <image src="/images/book-detail/book.png"></image>
+  </view>
+  <view>
+    <text>黑客与画家</text>
+  </view>
+  <view>
+    <text>[美]保罗 格雷厄鉧</text>
+  </view>
+</view>
+<view>
+  <view>
+    <text>短评</text>
+  </view>
+  <view>
+    <text>程序员也有艺术人生 +3082</text>
+    <text>程序员也有艺术人生 +3082</text>
+    <text>程序员也有艺术人生 +3082</text>
+  </view>
+</view>
+<view>
+  <view>
+    <text>《黑客与画家：硅谷创业之父paul graham文集》是硅谷创业之父paul graham 的文集，主要介绍黑客即优秀程序员的爱好和动机，讨论黑客成长、黑客对世界的贡献以及编程语言和黑客工作方法等所有对计算机时代感兴趣的人的一些话题。书中的内容不但有助于了解计算机编程的本质、互联网行业的规则，还会帮助读者了解我们这个时代，迫使读者独立思考。</text>
+  </view>
+  <view>
+    <text>保罗·格雷厄姆在康奈尔大学读完本科，然后在哈佛大学获得计算机科学博士学位。1995年，他创办了Viaweb，帮助个人用户在网上开店，这是世界上第一个互联网应用程序。1998年夏天，Yahoo!公司收购了Viaweb，收购价约为5000万美元。
+      </text>
+  </view>
+</view>
+
+<view>
+  <view><text>书本信息</text></view>
+  <view>
+    <view><text>出版社 人名邮电出版社</text></view>
+    <view><text>出版年 2011-4</text></view>
+    <view><text>页数 264</text></view>
+    <view><text>定价 49.00元</text></view>
+    <view><text>装帧 平装</text></view>
+  </view>
+</view>
