@@ -1,0 +1,34 @@
+<!--components/search/search.wxml-->
+<view class="search">
+  <!-- <image class="search-icon" src="./images/search.png"></image> -->
+  <input class="search-input" placeholder="搜索书籍"></input>
+  <!-- <image class="cancle" src="./images/cancle.png"></image> -->
+</view>
+<view class="search-suggest">
+  <view class="search-info">
+    <view class="title">
+      <view class="line"></view>
+      <text class="title-content">历史搜索</text>
+    </view>
+    <view class="search-history">
+      <text>村上春树</text>
+      <text>鲁迅</text>
+      <text>哈利波特</text>
+      <text>老舍</text>
+      <text>钢铁是怎么样炼成的</text>
+    </view>
+  </view>
+  <view class="search-info">
+    <view class="title">
+      <view class="line"></view>
+      <text class="title-content">热门搜索</text>
+    </view>
+    <view class="search-hot">
+      <text>村上春树</text>
+      <text>鲁迅</text>
+      <text>哈利波特</text>
+      <text>老舍</text>
+      <text>钢铁是怎么样炼成的</text>
+    </view>
+  </view>
+</view>

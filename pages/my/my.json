@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "cmp-like-item": "/components/like-item/like-item"
+  }
 }

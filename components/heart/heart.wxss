@@ -1,0 +1,17 @@
+/* components/heart/heart.wxss */
+.heart-container {
+  height: 50rpx;
+  position: absolute;
+  right: 10rpx;
+  top: 26rpx;
+  font-size: 14px;
+}
+.heart-container .heart {
+  width: 32rpx;
+  height: 28rpx;
+}
+.heart-container .count {
+  position: relative;
+  bottom: 14rpx;
+  left: 4rpx;
+}

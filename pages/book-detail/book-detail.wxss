@@ -1,1 +1,79 @@
 /* pages/book-detail/book-detail.wxss */
+.book-detail {
+  background: #f5f5f5;
+}
+.book-detail-header {
+  background: #fff;
+  text-align: center;
+  padding: 30rpx 0;
+}
+.book-detail-image {
+  width: 204rpx;
+  height: 305rpx;
+  padding-bottom: 20rpx;
+}
+.book-detail-name {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: SimHei;
+  padding-bottom: 10rpx;
+}
+.book-detail-author {
+  font-size: 14px;
+  color: #999;
+}
+.section {
+  background-color: #fff;
+  padding: 0 30rpx 20rpx;
+  margin-top: 20rpx;
+}
+.title {
+  height: 84rpx;
+  line-height: 84rpx;
+  font-size: 15px;
+  text-align: center;
+}
+.brief-item {
+  float: left;
+  background: #f7f7f7;
+  margin-right: 16rpx;
+  margin-bottom: 20rpx;
+  padding: 0 30rpx;
+}
+.brief-item-content {
+  height: 55rpx;
+  line-height: 55rpx;
+  font-size: 12px;
+  color: #666;
+  padding-right: 10rpx;
+}
+.brief-item-count {
+  height: 55rpx;
+  line-height: 55rpx;
+  font-size: 10px;
+  color: #bbb;
+}
+.introduction-content {
+  font-size: 14px;
+  color: #666;
+  line-height: 44rpx;
+  text-indent: 28px;
+}
+.info-content {
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.info-content-left {
+  display: inline-block;
+  width: 110rpx;
+  color: #999;
+  font-size: 12px;
+}
+.info-content-right {
+  display: inline-block;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #666;
+  font-size: 12px 
+}
+

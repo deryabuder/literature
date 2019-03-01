@@ -1,0 +1,11 @@
+<!--components/like-item/like-item.wxml-->
+<view class="like-item-container">
+  <view class="like-item-info">
+    <text class="like-item-type">电影</text>
+    <cmp-heart class="like-item-count"></cmp-heart>
+  </view>
+  <image class="like-item-img" src="./images/movie.png"></image>
+  <view class="like-item-des">
+    <text>人生不能像做菜，把所有的料准备好再下锅</text>
+  </view>
+</view>

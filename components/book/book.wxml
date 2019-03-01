@@ -1,0 +1,18 @@
+<!--components/book.wxml-->
+<view class="cmp-book">
+  <image class="book-image" src="/images/book-detail/book.png"></image>
+  <view class="book-bootom">
+    <view class="book-info">
+      <view class="book-info-name">
+        <text>黑客与画家</text>
+      </view>
+      <view class="book-info-author">
+        <text>[美]保罗格雷厄姆</text>
+      </view>
+    </view>
+    <view class="book-like">
+      <text class="book-like-count">225</text>
+      <text class="book-like-text">喜欢</text>
+    </view>
+  </view>
+</view>

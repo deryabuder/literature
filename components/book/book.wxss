@@ -1,0 +1,36 @@
+/* components/book.wxss */
+.cmp-book {
+  position: relative;
+  width: 206rpx;
+  height: 305rpx;
+  box-shadow: 1px 1px 1px #ccc;
+}
+.book-image {
+  width: 204rpx;
+  height: 305rpx;
+}
+.book-bootom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 10rpx;
+}
+.book-info-name {
+  font-size: 12px;
+  padding-bottom: 4rpx;
+}
+.book-info-author {
+  font-size: 10px;
+  color: #666;
+}
+.book-like {
+  float: right;
+  font-size: 10px;
+  color: #666;
+  padding-top: 10rpx;
+}
+.book-like-count {
+  padding-right: 10rpx;
+}

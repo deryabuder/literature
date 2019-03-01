@@ -2,3 +2,13 @@
 page {
   font-family: PingFangSC-Thin;
 }
+.clearfix::after {
+  clear: both;
+  display: block;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}

@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 9,
 			"list": [
 				{
 					"id": -1,
@@ -71,6 +71,41 @@
 					"id": -1,
 					"name": "book-detail",
 					"pathName": "pages/book-detail/book-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "book",
+					"pathName": "pages/book/book",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "about",
+					"pathName": "pages/about/about",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "book",
+					"pathName": "pages/book/book",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "book",
+					"pathName": "pages/book/book",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "book",
+					"pathName": "pages/my/my",
 					"scene": null
 				}
 			]
