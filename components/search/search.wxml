@@ -1,10 +1,11 @@
 <!--components/search/search.wxml-->
 <view class="search">
-  <!-- <image class="search-icon" src="./images/search.png"></image> -->
-  <input class="search-input" placeholder="搜索书籍"></input>
-  <!-- <image class="cancle" src="./images/cancle.png"></image> -->
+  <image class="search-icon" src="./images/search.png"></image>
+  <input class="search-input" bindfocus="onFocus" placeholder="{{placeholder}}" value="{{value}}"></input>
+  <image class="cancle" src="./images/cancel.png" wx:if="{{isFocus}}" bindtap="onDelete"></image>
+  <text class="cancel-text" wx:if="{{isFocus}}" bindtap="onToBook">取消</text>
 </view>
-<view class="search-suggest">
+<view class="search-suggest" wx:if="{{isFocus}}">
   <view class="search-info">
     <view class="title">
       <view class="line"></view>

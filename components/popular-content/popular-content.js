@@ -1,4 +1,4 @@
-// components/like-item/like-item.js
+// components/popular-content/popular-content.js
 Component({
   /**
    * 组件的属性列表
@@ -18,10 +18,5 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    onToDetail() {
-      wx.navigateTo({
-        url: '/components/popular-content/popular-content',
-      })
-    }
   }
 })

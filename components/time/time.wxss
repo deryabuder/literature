@@ -1,0 +1,31 @@
+/* components/time/time.wxss */
+.time-container {
+  display: flex;
+  align-items: flex-end;
+}
+.stage {
+  font-size: 16px;
+}
+.stage-number {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: bold;
+}
+.line {
+  margin: 0 10rpx;
+  width: 5rpx;
+  height: 44rpx;
+  background-color: #000;
+}
+.current-time {
+  display: flex;
+  flex-direction: column;
+}
+.current-month {
+  font-size: 12px;
+  line-height: 12px;
+}
+.current-year {
+  font-size: 10px;
+  line-height: 10px;
+}

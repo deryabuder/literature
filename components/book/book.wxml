@@ -1,17 +1,17 @@
 <!--components/book.wxml-->
-<view class="cmp-book">
-  <image class="book-image" src="/images/book-detail/book.png"></image>
-  <view class="book-bootom">
+<view class="book-item" bindtap='onToDetial'>
+  <image class="book-image" src="{{hotList.image}}"></image>
+  <view class="book-bottom">
     <view class="book-info">
       <view class="book-info-name">
-        <text>黑客与画家</text>
+        <text>{{hotList.title}}</text>
       </view>
       <view class="book-info-author">
-        <text>[美]保罗格雷厄姆</text>
+        <text>{{hotList.author}}</text>
       </view>
     </view>
     <view class="book-like">
-      <text class="book-like-count">225</text>
+      <text class="book-like-count">{{hotList.fav_nums}}</text>
       <text class="book-like-text">喜欢</text>
     </view>
   </view>

@@ -1,5 +1,5 @@
 /* components/book.wxss */
-.cmp-book {
+.book-item {
   position: relative;
   width: 206rpx;
   height: 305rpx;
@@ -9,7 +9,7 @@
   width: 204rpx;
   height: 305rpx;
 }
-.book-bootom {
+.book-bottom {
   position: absolute;
   bottom: 0;
   width: 100%;

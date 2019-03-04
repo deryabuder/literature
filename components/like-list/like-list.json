@@ -1,6 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "cmp-heart": "/components/heart/heart"
-  }
-}

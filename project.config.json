@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 9,
+			"current": 11,
 			"list": [
 				{
 					"id": -1,
@@ -105,6 +105,20 @@
 				{
 					"id": -1,
 					"name": "book",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "popular",
+					"pathName": "pages/popular/popular",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "my",
 					"pathName": "pages/my/my",
 					"scene": null
 				}

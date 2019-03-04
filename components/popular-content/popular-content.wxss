@@ -1,0 +1,30 @@
+/* components/popular-content/popular-content.wxss */
+.popular-content {
+  position: relative;
+}
+.popular-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+  height: 100rpx;
+}
+.repeat-container {
+  padding-left: 40rpx;
+}
+.popular-img {
+  width: 100%;
+  height: 560rpx;
+}
+.popular-type {
+  margin-left: 30rpx;
+  margin-top: -70rpx;
+  width: 46rpx;
+  height: 142rpx;
+}
+.popular-sentence {
+  margin: 40rpx 100rpx;
+  color: #0f0f0f;
+  font-size: 17px;
+  line-height: 30px;
+}

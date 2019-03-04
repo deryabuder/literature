@@ -1,4 +1,4 @@
-// components/like-list/like-list.js
+// components/time/time.js
 Component({
   /**
    * 组件的属性列表

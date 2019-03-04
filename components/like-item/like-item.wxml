@@ -1,5 +1,5 @@
 <!--components/like-item/like-item.wxml-->
-<view class="like-item-container">
+<view class="like-item-container" bindtap='onToDetail'>
   <view class="like-item-info">
     <text class="like-item-type">电影</text>
     <cmp-heart class="like-item-count"></cmp-heart>

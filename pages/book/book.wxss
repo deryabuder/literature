@@ -10,12 +10,12 @@
   width: 107rpx;
   height: 34rpx;
 }
-.book-list {
-  padding: 0 50rpx;
+.book-list-container {
   width: 100%;
   display: flex;
   flex-wrap:wrap;
+  padding: 0 50rpx;
 }
-.book-item {
+.book-list {
   padding: 30rpx 60rpx;
 }

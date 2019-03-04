@@ -1,9 +1,0 @@
-<!--components/like-list/like-list.wxml-->
-<view class="like">
-  <view>
-    <text>电影</text>
-    <cmp-heart></cmp-heart>
-  </view>
-  <image src="./images/movie.png"></image>
-  <view><text>人生不能像做菜，把所有的料准备好再下锅</text></view>
-</view>

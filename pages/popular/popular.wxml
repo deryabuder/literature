@@ -1,2 +1,7 @@
 <!--pages/popular/popular.wxml-->
-<text>pages/popular/popular.wxml</text>
+<cmp-popular-content></cmp-popular-content>
+<view class="popular-change-container">
+  <cmp-popular-change></cmp-popular-change>
+</view>
+
+

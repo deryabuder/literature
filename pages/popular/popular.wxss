@@ -1,1 +1,5 @@
 /* pages/popular/popular.wxss */
+.popular-change-container {
+  display: flex;
+  justify-content: center;
+}

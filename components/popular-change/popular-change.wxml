@@ -1,0 +1,6 @@
+<!--components/popular-change/popular-change.wxml-->
+<view class="change-container">
+  <image class="prev" src="./images/上一个@2x.png"></image>
+  <text class="current-item">花粥《纸短情长》</text>
+  <image class="next" src="./images/下一个@2x.png"></image>
+</view>

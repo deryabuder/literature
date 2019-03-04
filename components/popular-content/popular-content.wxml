@@ -1,0 +1,13 @@
+<!--components/popular-content/popular-content.wxml-->
+<view class="popular-content">
+  <view class="popular-info">
+    <cmp-time></cmp-time>
+    <view>
+      <cmp-heart></cmp-heart>
+      <cmp-repeat class="repeat-container"></cmp-repeat>
+    </view>
+  </view>
+  <image class="popular-img" src="./images/《饮食男女》@2x.png"></image>
+  <image class="popular-type" src="./images/电影。@2x.png"></image>
+  <view class="popular-sentence"><text>在变换的生命里，岁月原来是最大的小偷</text></view>
+</view>
