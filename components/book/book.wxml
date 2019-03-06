@@ -1,17 +1,17 @@
 <!--components/book.wxml-->
 <view class="book-item" bindtap="onToDetial">
-  <image class="book-image" src="{{hotList.image}}"></image>
+  <image class="book-image" src="{{bookItem.image}}"></image>
   <view class="book-bottom">
     <view class="book-info">
       <view class="book-info-name">
-        <text>{{hotList.title}}</text>
+        <text>{{bookItem.title}}</text>
       </view>
       <view class="book-info-author">
-        <text>{{hotList.author}}</text>
+        <text>{{bookItem.author}}</text>
       </view>
     </view>
     <view class="book-like">
-      <text class="book-like-count">{{hotList.fav_nums}}</text>
+      <text class="book-like-count">{{bookItem.fav_nums}}</text>
       <text class="book-like-text">喜欢</text>
     </view>
   </view>

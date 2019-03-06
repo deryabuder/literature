@@ -1,5 +1,6 @@
 // components/search/search.js
 var BookModel = require('../../models/bookData.js')
+var bookModel = new BookModel()
 Component({
   /**
    * 组件的属性列表
@@ -16,12 +17,23 @@ Component({
     isFocus: false,
     placeholder: "书籍名",
     hotKeyWord: [],
-    searchHistory: []
+    searchHistory: [],
+    searchResult: [],
+    isShowResult: false
   },
-  onLoad() {
+  attached() {
     this.setData({
       hotKeyWord: this.properties.hotKeyWord
     })
+    const value = wx.getStorageSync('searchHistory')
+    if (value) {
+      this.setData({
+        searchHistory: value
+      })
+    } else {
+      wx.setStorageSync(
+        'searchHistory', [])
+    }
   },
   /**
    * 组件的方法列表
@@ -32,14 +44,39 @@ Component({
       this.triggerEvent('cancel')
     },
     onDelete() {
-      console.log(11111)
       this.setData({
         isFocus: false,
-        value: ''
+        value: '',
+        isShowResult: false
       })
     },
-    onConfirm() {
-      
+    onConfirm(e) {
+      this.search(e.detail.value)
+    },
+    onSearch(e) {
+      this.setData({
+        value: e._relatedInfo.anchorRelatedText
+      })
+      this.search(this.data.value)
+    },
+    search(value) {
+      bookModel.getSearchResult(value, (res) => {
+        this.setData({
+          searchResult: res.books
+        })
+      })
+      var searchHistory = this.data.searchHistory
+      if (searchHistory.indexOf(value) === -1) {
+        searchHistory.push(value)
+        this.setData({
+          searchHistory: searchHistory
+        })
+        wx.setStorageSync('searchHistory', searchHistory)
+        wx.getStorageSync('searchHistory')
+      }
+      this.setData({
+        isShowResult: true
+      })
     }
   }
 })

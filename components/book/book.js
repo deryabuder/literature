@@ -4,7 +4,7 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    hotList: Object
+    bookItem: Object
   },
 
   /**
@@ -20,7 +20,7 @@ Component({
   methods: {
     onToDetial() {
       wx.navigateTo({
-        url: '/pages/book-detail/book-detail'
+        url: '/pages/book-detail/book-detail?index=' + this.data.bookItem.id
       })
     }
   }

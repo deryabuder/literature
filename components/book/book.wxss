@@ -18,10 +18,12 @@
   padding: 10rpx;
 }
 .book-info-name {
+  word-break: break-all;
   font-size: 12px;
   padding-bottom: 4rpx;
 }
 .book-info-author {
+  word-break: break-all;
   font-size: 10px;
   color: #666;
 }

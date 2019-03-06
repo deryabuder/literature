@@ -4,20 +4,43 @@ class BookModel extends HTTP {
     super()
   }
   getHotList(success) {
-    var params = { url: '/book/hot_list', success: success}
+    var params = {
+      url: '/book/hot_list',
+      success: success
+    }
     this.request(params)
   }
   getHotKeyWord(success) {
-    var params = { url: '/book/hot_keyword', success: success}
+    var params = {
+      url: '/book/hot_keyword',
+      success: success
+    }
     this.request(params)
   }
-  getBookDetail(success) {
+  getBookDetail(index, success) {
     var params = {
-      url: '/book/<id>/detail', success: success}
+      url: '/book/' + index + '/detail',
+      success: success
+    }
+    this.request(params)
+  }
+  getBookFavor(index, success) {
+    var params = {
+      url: '/book/' + index + '/favor',
+      success: success
+    }
+    this.request(params)
+  }
+  getBookComment(index, success) {
+    var params = {
+      url: '/book/' + index + '/short_comment',
+      success: success
+    }
+    this.request(params)
   }
   getSearchResult(q, success) {
     var params = {
-      url: '/book/search?q='+ q, 
+      url: '/book/search?q=' + q,
       success: success
     }
     this.request(params)

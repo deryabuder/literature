@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "cmp-heart": "/components/heart/heart",
+    "cmp-repeat": "/components/repeat/repeat"
+  }
 }
