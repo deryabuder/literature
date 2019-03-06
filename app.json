@@ -5,7 +5,8 @@
     "pages/book-detail/book-detail",
     "pages/my/my",
     "pages/course/course",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/popular-content/popular-content"
   ],
   "window": {
     "navigationBarBackgroundColor": "#fff",
@@ -17,7 +18,7 @@
   "tabBar": {
     "color": "#c7c7c7",
     "selectedColor": "#000",
-    "backgroundColor":"#fff",
+    "backgroundColor": "#fff",
     "list": [
       {
         "pagePath": "pages/popular/popular",

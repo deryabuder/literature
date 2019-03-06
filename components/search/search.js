@@ -1,10 +1,11 @@
 // components/search/search.js
+var BookModel = require('../../models/bookData.js')
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-
+    hotKeyWord: Object
   },
 
   /**
@@ -13,30 +14,32 @@ Component({
   data: {
     value: '',
     isFocus: false,
-    placeholder: "搜索书籍"
+    placeholder: "书籍名",
+    hotKeyWord: [],
+    searchHistory: []
   },
-
+  onLoad() {
+    this.setData({
+      hotKeyWord: this.properties.hotKeyWord
+    })
+  },
   /**
    * 组件的方法列表
    */
   methods: {
-    onFocus() {
-      this.setData({
-        isFocus: true,
-        placeholder: "书籍名"
-      })
-    },
-    onToBook() {
-      this.setData({
-        isFocus: false,
-        placeholder: "搜索书籍"
-      })
+    onCancel() {
+      // 调用的是父组件的事件
+      this.triggerEvent('cancel')
     },
     onDelete() {
+      console.log(11111)
       this.setData({
         isFocus: false,
-        placeholder: "搜索书籍"
+        value: ''
       })
+    },
+    onConfirm() {
+      
     }
   }
 })

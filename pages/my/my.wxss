@@ -72,11 +72,11 @@
   width: 97rpx;
   height: 42rpx;
 }
-.my-like-lit {
+.my-like-list {
   display: flex;
   flex-wrap: wrap;
   padding: 0 22rpx;
 }
-.my-like-lit cmp-like-item {
+.my-like-list .cmp-like-item {
   margin: 0 24rpx 40rpx;
 }

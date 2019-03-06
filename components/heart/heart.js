@@ -4,16 +4,25 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    isLike: Number,
+    count: Number
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    count: 251,
-    isLike: false,
-    src: "./images/like@dis.png"
+    count: 0,
+    isLike: 0
+  },
+
+ /**
+  * 自定义组件的生命周期
+  */
+  onLoad() {
+    // 这里不能获取properties中的变量的属性
+    this.setData({ count: this.properties.count})
+    this.setData({ isLike: this.properties.isLike})
   },
 
   /**
@@ -21,15 +30,11 @@ Component({
    */
   methods: {
     onChangeLike() {
-      console.log(this.data.count)
       var count = this.data.count
-      console.log(count)
       if(this.data.isLike) {
         count = count-1
-        this.setData({ src: "./images/like@dis.png"})
       } else {
         count = count+1
-        this.setData({ src: "./images/like.png" })
       }
       this.setData({ count: count })
       this.setData({ isLike: !this.data.isLike })

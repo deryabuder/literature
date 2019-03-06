@@ -1,13 +1,16 @@
 //index.js
 //获取应用实例
 const app = getApp()
+var PopularModel = require('../../models/popularData.js')
+var popularModel = new PopularModel()
 
 Page({
   data: {
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    favor: []
   },
   onLoad: function() {
     if (app.globalData.userInfo) {
@@ -36,6 +39,9 @@ Page({
         }
       })
     }
+    popularModel.getFavor((res) => {
+      this.setData({favor: res})
+    })
   },
   getUserInfo: function(e) {
     app.globalData.userInfo = e.detail.userInfo

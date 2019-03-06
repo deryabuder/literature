@@ -7,25 +7,29 @@
   height: 108rpx;
   border-top: 1rpx solid #eee;
   border-bottom: 1rpx solid #eee;
+  /* 设置光标的颜色 */
+  caret-color: #00ff62;
 }
 .search-icon {
   position: absolute;
   height: 28rpx;
   width: 28rpx;
-  left: 50%;
   top: 50%;
-  transform: translateX(-100rpx) translateY(-50%);
+  left: 20rpx;
+  transform: translateY(-50%);
 }
 .search-input {
   flex: 1;
-  text-align: center;
+  text-align: left;
+  padding-left: 60rpx;
   font-size: 14px;
   color: #999;
   height: 70rpx;
   background-color: #f7f7f7;
   border-radius: 40rpx;
 }
-.cancle {
+.cancel {
+  z-index: 2;
   width: 24rpx;
   height: 24rpx;
   margin-left: -40rpx;
@@ -37,12 +41,6 @@
 }
 .search-suggest {
   padding: 20rpx;
-  z-index: 2;
-  position: absolute;
-  top: 110rpx;
-  bottom: 0rpx;
-  left: 0rpx;
-  right: 0rpx;
   font-size: 14px;
   background-color: #fff;
 }

@@ -1,5 +1,5 @@
 <!--components/book.wxml-->
-<view class="book-item" bindtap='onToDetial'>
+<view class="book-item" bindtap="onToDetial">
   <image class="book-image" src="{{hotList.image}}"></image>
   <view class="book-bottom">
     <view class="book-info">

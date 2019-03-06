@@ -1,7 +1,10 @@
 <!--pages/popular/popular.wxml-->
-<cmp-popular-content></cmp-popular-content>
+<cmp-popular-content currentItem="{{currentItem}}"></cmp-popular-content>
+<!-- 切换展示页面 -->
 <view class="popular-change-container">
-  <cmp-popular-change></cmp-popular-change>
+  <view class="change-container">
+    <image class="prev" src="{{index===8?'/images/popular/triangle.dis@left.png':'/images/popular/triangle@left.png'}}" bindtap='onNext'></image>
+    <text class="current-item">{{currentItem.title}}</text>
+    <image class="next" src="{{index===1?'/images/popular/triangle.dis@right.png':'/images/popular/triangle@right.png'}}" bindtap='onPrev'></image>
+  </view>
 </view>
-
-

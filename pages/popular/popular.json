@@ -1,6 +1,5 @@
 {
   "usingComponents": {
-    "cmp-popular-content": "/components/popular-content/popular-content",
-    "cmp-popular-change": "/components/popular-change/popular-change"
+    "cmp-popular-content": "/components/popular-content/popular-content"
   }
 }

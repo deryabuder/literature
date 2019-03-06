@@ -1,22 +1,18 @@
 <!--components/search/search.wxml-->
 <view class="search">
   <image class="search-icon" src="./images/search.png"></image>
-  <input class="search-input" bindfocus="onFocus" placeholder="{{placeholder}}" value="{{value}}"></input>
-  <image class="cancle" src="./images/cancel.png" wx:if="{{isFocus}}" bindtap="onDelete"></image>
-  <text class="cancel-text" wx:if="{{isFocus}}" bindtap="onToBook">取消</text>
+  <input class="search-input" auto-focus placeholder="{{placeholder}}" value="{{value}}" bindconfirm="onConfirm"></input>
+  <image class="cancel" src="./images/cancel.png" bindtap="onDelete"></image>
+  <text class="cancel-text" bindtap="onCancel">取消</text>
 </view>
-<view class="search-suggest" wx:if="{{isFocus}}">
+<view class="search-suggest" >
   <view class="search-info">
     <view class="title">
       <view class="line"></view>
       <text class="title-content">历史搜索</text>
     </view>
     <view class="search-history">
-      <text>村上春树</text>
-      <text>鲁迅</text>
-      <text>哈利波特</text>
-      <text>老舍</text>
-      <text>钢铁是怎么样炼成的</text>
+      <text wx:for="{{searchHistory}}" wx:key="{{index}}">{{item}}></text>
     </view>
   </view>
   <view class="search-info">
@@ -25,11 +21,7 @@
       <text class="title-content">热门搜索</text>
     </view>
     <view class="search-hot">
-      <text>村上春树</text>
-      <text>鲁迅</text>
-      <text>哈利波特</text>
-      <text>老舍</text>
-      <text>钢铁是怎么样炼成的</text>
+      <text wx:for="{{hotKeyWord}}" wx:key="{{index}}">{{item}}</text>
     </view>
   </view>
 </view>

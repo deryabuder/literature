@@ -1,9 +1,9 @@
-<!--components/popular-content/popular-content.wxml-->
+<!--pages/popular-content/popular-content.wxml-->
 <view class="popular-content">
   <view class="popular-info">
-    <cmp-time index="{{currentItem.index}}" pubdate="{{currentItem.pubdate}}"></cmp-time>
+    <cmp-time currentItem="{{currentItem}}"></cmp-time>
     <view>
-      <cmp-heart isLike="{{currentItem.like_status}}" count="{{currentItem.fav_nums}}"></cmp-heart>
+      <cmp-heart currentItem="{{currentItem}}"></cmp-heart>
       <cmp-repeat class="repeat-container"></cmp-repeat>
     </view>
   </view>
