@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "cmp-popular-content": "/components/popular-content/popular-content"
+    "cmp-popular-content": "/pages/popular-content/popular-content"
   }
 }

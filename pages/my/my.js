@@ -12,7 +12,7 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     favor: []
   },
-  onLoad: function() {
+  onLoad: function(options) {
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -40,7 +40,10 @@ Page({
       })
     }
     popularModel.getFavor((res) => {
-      this.setData({favor: res})
+      console.log(res)
+      this.setData({
+        favor: res
+      })
     })
   },
   getUserInfo: function(e) {
@@ -58,6 +61,11 @@ Page({
   onToAbout() {
     wx.navigateTo({
       url: '/pages/about/about',
+    })
+  },
+  onToDetail(e) {
+    wx.navigateTo({
+      url: '/pages/popular-content/popular-content?id=' + e.detail.id + '&type=' + e.detail.type
     })
   }
 })

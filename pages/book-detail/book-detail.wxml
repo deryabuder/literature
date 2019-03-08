@@ -28,7 +28,7 @@
       <text>内容介绍</text>
     </view>
     <view class="introduction-content">
-      <text decode="true">{{bookDetail.summary}}</text>
+      <text decode="{{true}}">{{bookDetail.summary}}</text>
     </view>
   </view>
 
@@ -60,11 +60,10 @@
     </view>
   </view>
 </view>
-
 <view class="input-comment" wx:if="{{!isFocus}}">
   <input placeholder='短评：仅做展示，不能输入' bindfocus="onFocus"></input>
   <view class="comment-right">
-    <cmp-heart isLike="{{favor.fav_nums}}" count="{{favor.like_status}}"></cmp-heart>
+    <cmp-heart isLike="{{favor.like_status}}" count="{{favor.fav_nums}}"></cmp-heart>
     <cmp-repeat></cmp-repeat>
   </view>
 </view>
@@ -75,14 +74,10 @@
       <text class="title-right" bindtap='onCancel'>取消</text>
     </view>
     <view class="comment-label-content">
-      <view class="brief-content clearfix">
-        <text class="brief-item"><text class="brief-item-content">程序员</text>
-        <text class="brief-item-count">+3082</text></text>
-        <text class="brief-item"><text class="brief-item-content">有艺术人生</text>
-        <text class="brief-item-count">+3082</text></text>
-        <text class="brief-item"><text class="brief-item-content">程序艺术人生</text>
-        <text class="brief-item-count">+3082</text></text>
-      </view>
+      <text class="brief-item" wx:for="{{seletedComments}}" wx:key="{{index}}" wx:if="{{comments.length>0}}" bindtap="onAddComment">
+        <text class="brief-item-content">{{item.content}}</text>
+        <text class="brief-item-count">+{{item.nums}}</text>
+      </text>
       <image class="tips" src="/images/book-detail/tip.png"></image>
     </view>
   </view>

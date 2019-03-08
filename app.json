@@ -5,8 +5,7 @@
     "pages/book-detail/book-detail",
     "pages/my/my",
     "pages/course/course",
-    "pages/about/about",
-    "pages/popular-content/popular-content"
+    "pages/about/about"
   ],
   "window": {
     "navigationBarBackgroundColor": "#fff",

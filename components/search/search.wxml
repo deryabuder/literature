@@ -27,6 +27,6 @@
 </view>
 <view class="book-list-container" wx:if="{{isShowResult}}">
   <view wx:for="{{searchResult}}" class="book-list" wx:key="{{index}}">
-    <cmp-book bookItem="{{item}}"></cmp-book>
+    <cmp-book bookItem="{{item}}" hiddenLike="{{true}}"></cmp-book>
   </view>
 </view>

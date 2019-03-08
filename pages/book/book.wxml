@@ -10,7 +10,7 @@
     </view>
     <view class="book-list-container">
       <view wx:for="{{hotList}}" class="book-list" wx:key="{{item.id}}">
-        <cmp-book bookItem="{{item}}"></cmp-book>
+        <cmp-book bookItem="{{item}}" hiddenLike="{{false}}"></cmp-book>
       </view>
     </view>
   </view>

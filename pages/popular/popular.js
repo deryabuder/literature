@@ -15,6 +15,7 @@ Page({
    */
   onLoad: function(options) {
     var that = this
+    // 获取数据是异步的，因此后面没有接收到数据
     popularModel.getLatest(function(res) {
       that.setData({
         currentItem: res
@@ -43,7 +44,7 @@ Page({
     var that = this
     var index = that.data.currentItem.index
     if (index > 1) {
-      popularModel.getprevious(index, function(res) {
+      popularModel.getPrevious(index, function(res) {
         that.setData({
           currentItem: res
         })

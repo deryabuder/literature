@@ -1,0 +1,7 @@
+<!--components/popular-img/music/music.wxml-->
+<view class="popular-img-wrapper">
+  <image class="popular-img" src="{{currentImg}}"></image>
+  <image wx:if="{{!playing}}" class="playing" src="./images/player@playing.png"></image>
+  <image wx:if="{{playing}}" class="waiting" src="./images/player@waitting.png"></image>
+</view>
+<image class="popular-type" src="./images/music@tag.png"></image>

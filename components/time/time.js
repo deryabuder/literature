@@ -1,11 +1,10 @@
-// components/time/time.js
+ // components/time/time.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    index: Number, 
-    pubdate: String
+    index: Number
   },
 
   /**
@@ -17,7 +16,7 @@ Component({
     currentYear: ''
   },
   // 用onLoad和attached获取不到数据
-  ready() {
+  attached() {
     this.getTime()
   },
   /**
@@ -26,9 +25,9 @@ Component({
   methods: {
     // 终于获取到数据了
     getTime() {
-      var pubdate = this.properties.pubdate
-      var currentMonth = pubdate.substr(6, 1)
-      var currentYear = pubdate.substr(0, 4)
+      let date = new Date()
+      var currentMonth = date.getMonth()
+      var currentYear = date.getFullYear()
       currentMonth = this.SectionToChinese(currentMonth)
       this.setData({
         index: this.properties.index,

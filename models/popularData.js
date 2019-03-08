@@ -17,7 +17,7 @@ class PopularModel extends HTTP {
     }
     this.request(params)
   }
-  getprevious(index, success) {
+  getPrevious(index, success) {
     var params = {
       url: '/classic/' + index + '/previous',
       success: success
@@ -27,6 +27,13 @@ class PopularModel extends HTTP {
   getFavor(success) {
     var params = {
       url: '/classic/favor',
+      success: success
+    }
+    this.request(params)
+  }
+  getSpecific(type, id, success) {
+    var params = {
+      url: '/classic/' + type + '/' + id,
       success: success
     }
     this.request(params)

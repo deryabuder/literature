@@ -1,13 +1,16 @@
-<!--pages/popular-content/popular-content.wxml-->
+<!--components/popular-content/popular-content.wxml-->
 <view class="popular-content">
   <view class="popular-info">
-    <cmp-time currentItem="{{currentItem}}"></cmp-time>
+    <cmp-time index="{{currentItem.index}}"></cmp-time>
     <view>
-      <cmp-heart currentItem="{{currentItem}}"></cmp-heart>
+      <cmp-heart currentItem="{{currentItem}}" isLike="{{currentItem.like_status}}" count="{{currentItem.fav_nums}}"></cmp-heart>
       <cmp-repeat class="repeat-container"></cmp-repeat>
     </view>
   </view>
-  <image class="popular-img" src="{{currentItem.image}}"></image>
-  <image class="popular-type" src="{{ currentItem.type == '100' ? './images/movie@tag.png' : currentItem.type == '200' ? './images/music@tag.png':'./images/essay@tag.png'}}"></image>
-  <view class="popular-sentence"><text>{{currentItem.content}}</text></view>
+  <cmp-movie wx:if="{{currentItem.type == 100}}" currentImg="{{currentItem.image}}"></cmp-movie>
+  <cmp-music wx:elif="{{currentItem.type == 200}}" currentImg="{{currentItem.image}}"></cmp-music>
+  <cmp-essay wx:else currentImg="{{currentItem.image}}"></cmp-essay>
+  <view class="popular-sentence">
+    <text>{{currentItem.content}}</text>
+  </view>
 </view>

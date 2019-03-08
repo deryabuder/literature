@@ -11,7 +11,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    favorItem: [],
+    favorItem: {},
   },
   attached() {
     this.setData({
@@ -24,9 +24,10 @@ Component({
    */
   methods: {
     onToDetail(e) {
-      wx.navigateTo({
-        url: '/pages/popular-content/popular-content?favorItem=' + JSON.stringify(this.data.favorItem),
-      })
+      this.triggerEvent('tap', {
+        id: this.properties.favorItem.id,
+        type: this.properties.favorItem.type
+      }, {})
     }
   }
 })

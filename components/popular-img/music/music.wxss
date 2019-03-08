@@ -1,0 +1,25 @@
+/* components/popular-img/music/music.wxss */
+.popular-img-wrapper {
+  position: relative;
+  text-align: center;
+  height: 500rpx;
+}
+.popular-img {
+  width: 440rpx;
+  height: 440rpx;
+  margin-top: 60rpx;
+}
+.popular-type {
+  margin-left: 30rpx;
+  margin-top: -70rpx;
+  width: 46rpx;
+  height: 142rpx;
+}
+.playing, .waitting {
+  position: absolute;
+  width: 120rpx;
+  height: 120rpx;
+  left: 50%;
+  top: 280rpx;
+  transform: translate(-50%, -50%);
+}

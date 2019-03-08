@@ -9,7 +9,8 @@ Page({
     bookDetail: {},
     isFocus: false,
     favor: {},
-    comments: []
+    comments: [],
+    seletedComments: []
   },
   /**
    * 生命周期函数--监听页面加载
@@ -24,9 +25,9 @@ Page({
       this.setData({favor: res})
     })
     bookModel.getBookComment(options.index, (res)=>{
-      console.log(res)
       this.setData({
-        comments: res.comments
+        comments: res.comments,
+        seletedComments: res.comments.slice(0, 3)
       })
     })
   },
@@ -39,5 +40,18 @@ Page({
     this.setData({
       isFocus: false
     })
+  },
+  onAddComment(e) {
+    var commentStr = e._relatedInfo.anchorRelatedText
+    var index = commentStr.indexOf('+')
+    var content = commentStr.slice(0, index)
+    var nums = commentStr.slice(index+1)
+    var comment = {
+      'content': content,
+      'nums': nums
+    }
+    var comments = this.data.comments
+    comments.unshift(comment)
+    this.setData({comments : comments})
   }
 })

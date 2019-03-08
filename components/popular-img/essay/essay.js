@@ -1,22 +1,21 @@
-// components/popular-content/popular-content.js
+// components/popular-img/movie/movie.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    currentItem: Object
+    currentImg: String
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    currentItem: {}
+    currentImg: ''
   },
-
   attached() {
     this.setData({
-      currentItem: this.properties.currentItem,
+      currentImg: this.properties.currentImg
     })
   },
 
@@ -24,6 +23,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    
+
   }
 })

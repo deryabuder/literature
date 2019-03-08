@@ -68,6 +68,12 @@
   height: 50rpx;
   line-height: 50rpx;
 }
+.brief-content .brief-item:nth-child(1), .comment-label-content .brief-item:nth-child(1){
+  background-color: #FFFADD;
+}
+.brief-content .brief-item:nth-child(2), .brief-item:nth-child(1) .brief-item:nth-child(2){
+  background-color: #EEFAFF;
+}
 .info-content-left {
   display: inline-block;
   width: 110rpx;

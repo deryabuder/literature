@@ -16,13 +16,17 @@ Component({
     isLike: 0
   },
 
- /**
-  * 自定义组件的生命周期
-  */
+  /**
+   * 自定义组件的生命周期
+   */
   onLoad() {
     // 这里不能获取properties中的变量的属性
-    this.setData({ count: this.properties.count})
-    this.setData({ isLike: this.properties.isLike})
+    this.setData({
+      count: this.properties.count
+    })
+    this.setData({
+      isLike: this.properties.isLike
+    })
   },
 
   /**
@@ -31,13 +35,17 @@ Component({
   methods: {
     onChangeLike() {
       var count = this.data.count
-      if(this.data.isLike) {
-        count = count-1
+      if (this.data.isLike) {
+        count = count - 1
       } else {
-        count = count+1
+        count = count + 1
       }
-      this.setData({ count: count })
-      this.setData({ isLike: !this.data.isLike })
+      this.setData({
+        count: count
+      })
+      this.setData({
+        isLike: !this.data.isLike
+      })
     }
   }
 })

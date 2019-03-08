@@ -1,0 +1,3 @@
+<!--components/popular-img/movie/movie.wxml-->
+<image class="popular-img" src="{{currentImg}}"></image>
+<image class="popular-type" src="./images/movie@tag.png"></image>

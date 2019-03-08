@@ -10,7 +10,7 @@
         <text>{{bookItem.author}}</text>
       </view>
     </view>
-    <view class="book-like">
+    <view class="book-like" wx:if="{{!hiddenLike}}">
       <text class="book-like-count">{{bookItem.fav_nums}}</text>
       <text class="book-like-text">喜欢</text>
     </view>

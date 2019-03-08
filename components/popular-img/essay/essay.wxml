@@ -1,0 +1,3 @@
+<!--components/popular-img/essay/essay.wxml-->
+  <image class="popular-img" src="{{currentImg}}"></image>
+  <image class="popular-type" src="./images/essay@tag.png"></image>
