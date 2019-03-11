@@ -8,7 +8,7 @@
     </view>
   </view>
   <cmp-movie wx:if="{{currentItem.type == 100}}" currentImg="{{currentItem.image}}"></cmp-movie>
-  <cmp-music wx:elif="{{currentItem.type == 200}}" currentImg="{{currentItem.image}}"></cmp-music>
+  <cmp-music catchtap="onControl" wx:elif="{{currentItem.type == 200}}" currentImg="{{currentItem.image}}"></cmp-music>
   <cmp-essay wx:else currentImg="{{currentItem.image}}"></cmp-essay>
   <view class="popular-sentence">
     <text>{{currentItem.content}}</text>

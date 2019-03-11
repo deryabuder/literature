@@ -14,7 +14,9 @@
 <view>
   <image src=""></image>
 </view>
-<image class="about-right" src="/images/about/snacks.png"></image>
+ <navigator class="nav" target="miniProgram" app-id="wx8ffc97ad5bcccc89" open-type="navigate">
+  <image class="about-right" src="/images/about/snacks.png"></image>
+</navigator>
 <view class="about-bottom">
   <view class="about-info1">
     <text>关注微信公众号</text>

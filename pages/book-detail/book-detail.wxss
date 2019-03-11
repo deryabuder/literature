@@ -62,7 +62,10 @@
   font-size: 14px;
   color: #666;
   line-height: 44rpx;
-  text-indent: 28px;
+  text-indent: 2em;
+}
+.p {
+  text-indent: 2em;
 }
 .info-content {
   height: 50rpx;

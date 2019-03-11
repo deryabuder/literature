@@ -1,5 +1,6 @@
 <!--pages/popular/popular.wxml-->
-<cmp-popular-content currentItem="{{currentItem}}"></cmp-popular-content>
+<cmp-popular-content catchtap="onControl" currentItem="{{currentItem}}"></cmp-popular-content>
+<audio src="/pages/popular/source/出山.mp3" id="musicAudio" loop="{{true}}"action="{{action}}"></audio>
 <!-- 切换展示页面 -->
 <view class="popular-change-container">
   <view class="change-container">

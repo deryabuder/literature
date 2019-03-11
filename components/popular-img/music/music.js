@@ -19,11 +19,26 @@ Component({
       currentImg: this.properties.currentImg
     })
   },
-
   /**
    * 组件的方法列表
    */
   methods: {
-
+    // audio的播放控制参考于https://www.cnblogs.com/liululin/p/6016617.html
+    onPlay() {
+      this.setData({
+        playing: true
+      })
+      this.triggerEvent('tap', {
+        playing: true
+      }, {})
+    },
+    onPause() {
+      this.setData({
+        playing: false
+      })
+      this.triggerEvent('tap',{
+        playing: false
+      }, {})
+    }
   }
 })

@@ -17,9 +17,10 @@ Component({
   },
 
   onLoad(options) {
+    console.log(1111)
     if (options.type && options.id) {
-      var type = options.type
-      var id = options.id
+      let type = options.type
+      let id = options.id
       popularModel.getSpecific(type, id, (res) => {
         this.setData({
           currentItem: res
@@ -36,6 +37,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    
+    onControl(e) {
+      this.triggerEvent('tap', {
+        playing: e.detail.playing
+      }, {})
+    }
   }
 })

@@ -28,7 +28,8 @@
       <text>内容介绍</text>
     </view>
     <view class="introduction-content">
-      <text decode="{{true}}">{{bookDetail.summary}}</text>
+      <!-- 动态获取数据，\n无法实现换行，解决方法: 1.将\n替换成<br>。2. 在数据库中的\n取出时会变成\\n,因此需要data = data.replace('/\n/g', 'n')-->
+      <text decode="{{true}}">{{summary}}</text>
     </view>
   </view>
 
