@@ -1,11 +1,15 @@
 // components/heart/heart.js
+var LikeModel = require('../../models/likeData.js')
+var likeModel = new LikeModel()
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
     isLike: Number,
-    count: Number
+    count: Number,
+    id: Number,
+    type: Number
   },
 
   /**
@@ -13,7 +17,9 @@ Component({
    */
   data: {
     count: 0,
-    isLike: 0
+    isLike: 0,
+    id: 1,
+    type: 100
   },
 
   /**
@@ -22,10 +28,10 @@ Component({
   onLoad() {
     // 这里不能获取properties中的变量的属性
     this.setData({
-      count: this.properties.count
-    })
-    this.setData({
-      isLike: this.properties.isLike
+      count: this.properties.count,
+      isLike: this.properties.isLike,
+      type: this.properties.type,
+      id: this.properties.id
     })
   },
 
@@ -46,6 +52,11 @@ Component({
       this.setData({
         isLike: !this.data.isLike
       })
+      var likeOrCancel = this.data.isLike ? 'like' : 'cancel'
+      var id = this.data.id
+      var type = this.data.type
+      console.log(this.data)
+      likeModel.like(likeOrCancel, id, type)
     }
   }
 })

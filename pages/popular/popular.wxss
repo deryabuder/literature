@@ -1,4 +1,24 @@
 /* pages/popular/popular.wxss */
+.popular-content {
+  position: relative;
+}
+.popular-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+  height: 100rpx;
+}
+.repeat-container {
+  padding-left: 40rpx;
+}
+.popular-sentence {
+  margin: 40rpx 100rpx 80rpx;
+  color: #0f0f0f;
+  font-size: 17px;
+  line-height: 30px;
+  height: 60px;
+}
 .popular-change-container {
   display: flex;
   justify-content: center;

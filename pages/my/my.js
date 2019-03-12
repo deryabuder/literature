@@ -40,17 +40,9 @@ Page({
       })
     }
     popularModel.getFavor((res) => {
-      console.log(res)
       this.setData({
         favor: res
       })
-    })
-  },
-  getUserInfo: function(e) {
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
     })
   },
   onToCourse() {

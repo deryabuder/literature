@@ -1,5 +1,19 @@
 <!--pages/popular/popular.wxml-->
-<cmp-popular-content catchtap="onControl" currentItem="{{currentItem}}"></cmp-popular-content>
+<view class="popular-content">
+  <view class="popular-info">
+    <cmp-time index="{{currentItem.index}}"></cmp-time>
+    <view>
+      <cmp-heart currentItem="{{currentItem}}" isLike="{{currentItem.like_status}}" count="{{currentItem.fav_nums}}" id="{{currentItem.id}}" type="{{currentItem.type}}"></cmp-heart>
+      <cmp-repeat class="repeat-container"></cmp-repeat>
+    </view>
+  </view>
+  <cmp-movie wx:if="{{currentItem.type == 100}}" currentImg="{{currentItem.image}}"></cmp-movie>
+  <cmp-music catchtap="onControl" wx:elif="{{currentItem.type == 200}}" currentImg="{{currentItem.image}}"></cmp-music>
+  <cmp-essay wx:else currentImg="{{currentItem.image}}"></cmp-essay>
+  <view class="popular-sentence">
+    <text>{{currentItem.content}}</text>
+  </view>
+</view>
 <audio src="/pages/popular/source/出山.mp3" id="musicAudio" loop="{{true}}"action="{{action}}"></audio>
 <!-- 切换展示页面 -->
 <view class="popular-change-container">

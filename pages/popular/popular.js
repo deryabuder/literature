@@ -57,9 +57,7 @@ Page({
     }
   },
   onControl(e) {
-    console.log(e)
     if (e.detail.playing) {
-      console.log(222)
       this.audioCtx.seek(0)
       this.setData({
         action: {
@@ -68,7 +66,6 @@ Page({
       });
       // 因为每次会触发两次点击事件，一次返回正确的e.detail,一次返回的是undefined。
     } else if (e.detail.playing===false){
-      console.log(2333)
       this.setData({
         action: {
           method: 'pause'

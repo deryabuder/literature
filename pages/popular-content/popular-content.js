@@ -1,36 +1,26 @@
 // components/popular-content/popular-content.js
 var PopularModel = require('../../models/popularData.js')
 var popularModel = new PopularModel()
-Component({
-  /**
-   * 组件的属性列表
-   */
-  properties: {
-    currentItem: Object
-  },
-
+Page({
   /**
    * 组件的初始数据
    */
   data: {
-    currentItem: {}
+    currentItem: {},
+    id: 0
   },
 
-  onLoad(options) {
-    console.log(1111)
-    if (options.type && options.id) {
-      let type = options.type
-      let id = options.id
-      popularModel.getSpecific(type, id, (res) => {
-        this.setData({
-          currentItem: res
-        })
-      })
-    } else {
+  onLoad(query) {
+    var type = query.type
+    var id = query.id
+    this.setData({
+      id: id
+    })
+    popularModel.getSpecific(type, id, (res) => {
       this.setData({
-        currentItem: this.properties.currentItem
+        currentItem: res
       })
-    }
+    })
   },
 
   /**

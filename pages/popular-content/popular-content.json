@@ -1,5 +1,4 @@
 {
-  "component": true,
   "usingComponents": {
     "cmp-heart": "/components/heart/heart",
     "cmp-time": "/components/time/time",

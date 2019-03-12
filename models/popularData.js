@@ -32,7 +32,7 @@ class PopularModel extends HTTP {
     this.request(params)
   }
   getSpecific(type, id, success) {
-    var params = {
+    let params = {
       url: '/classic/' + type + '/' + id,
       success: success
     }
