@@ -9,8 +9,8 @@ class LikeModel extends HTTP {
       url: url,
       method: 'POST',
       data: {
-        art_id: id,
-        type: type
+        "art_id": id,
+        "type": type
       },
       success: (data) => {
         console.log(data)
